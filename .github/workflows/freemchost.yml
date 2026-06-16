@@ -1,10 +1,6 @@
 name: Freemchost Auto Renew Permanent
 
-on:
-  schedule:
-    - cron: '0 1 * * *'
-  workflow_dispatch: # 允许你在 GitHub 页面上手动点击按钮强制触发
-
+on: push
 jobs:
   browser-auto-renew:
     runs-on: ubuntu-latest
